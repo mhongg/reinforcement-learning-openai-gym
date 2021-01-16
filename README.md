@@ -1,6 +1,5 @@
 # Reinforcement Learning OpenAI Gym
 
-## About
 This project implements 2 reinforcement learning approaches (Deep Q-Learning and TD3) on the environments provided by OpenAI Gym
 and introduces 3 tricks trying to further improve the base algorithms.
 
