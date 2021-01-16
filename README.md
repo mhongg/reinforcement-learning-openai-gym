@@ -9,7 +9,7 @@ File name ended with "1"    = Only semi-adaptive batch size is implemented in th
 File name ended with "123"  = All 3 proposed methods are implemented in the base algorithm
 
 
-## Results (unit: average number of episodes through 10 trials)
+## Results (unit: average number of episodes throughout 10 trials)
 |                  | Cart Pole | Mountain Car | Lunar Lander | Lunar Lander Continuous |
 |------------------|-----------|--------------|--------------|-------------------------|
 | Base             | 275.4     | 641.9        | 402.2        | 377.6                   |
