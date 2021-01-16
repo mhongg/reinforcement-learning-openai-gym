@@ -3,12 +3,6 @@
 This project implements 2 reinforcement learning approaches (Deep Q-Learning and TD3) on the environments provided by OpenAI Gym
 and introduces 3 tricks trying to further improve the base algorithms.
 
-## Context
-File name ended with "base" = Only base algorithm (DQN/TD3)\
-File name ended with "1"    = Only semi-adaptive batch size is implemented in the base algorithm\
-File name ended with "123"  = All 3 proposed methods are implemented in the base algorithm
-
-
 ## Results (unit: average number of episodes throughout 10 trials)
 |                  | Cart Pole | Mountain Car | Lunar Lander | Lunar Lander Continuous |
 |------------------|-----------|--------------|--------------|-------------------------|
@@ -20,6 +14,16 @@ File name ended with "123"  = All 3 proposed methods are implemented in the base
 | Base + 1 + 3     | 148.9     | 606.4        | 354.2        | -                       |
 | Base + 2 + 3     | 145.5     | 492.2        | 276.1        | -                       |
 | Base + 1 + 2 + 3 | 137.6     | 723.9        | 309.3        | -                       |
+
+* base = base algorithm (DQN or TD3);\
+  1    = semi-adaptive batch size;\
+  2    = adaptive 𝜖-greedy;\
+  3    = lightweight prioritize experience replay;
+
+## Context
+File name ended with "base" = Only base algorithm (DQN or TD3)\
+File name ended with "1"    = Only semi-adaptive batch size is implemented in the base algorithm\
+File name ended with "123"  = All 3 proposed methods are implemented in the base algorithm
 
 ## Acknowledgement
 Code in CarPole-v0, MountainCar-v0, LunarLander-v2 are modified from\
